@@ -55,7 +55,7 @@ G2L["6"] = Instance.new("ImageLabel", G2L["4"]);
 G2L["6"]["BorderSizePixel"] = 0;
 G2L["6"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["Image"] = [[rbxassetid://96581271712752]];
+G2L["6"]["Image"] = [[✧]];
 G2L["6"]["Size"] = UDim2.new(0.05581, 0, 1, 0);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["BackgroundTransparency"] = 1;
@@ -68,13 +68,13 @@ G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["TextSize"] = 18;
 G2L["7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7"]["BackgroundTransparency"] = 1;
 G2L["7"]["RichText"] = true;
 G2L["7"]["Size"] = UDim2.new(0.91475, 0, 1, 0);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[<b>npc panel |  @Im_Patrick Youtube</b>]];
+G2L["7"]["Text"] = [[<b>NPC | @anhlongabcxyz Youtube</b>]];
 G2L["7"]["Position"] = UDim2.new(0.07674, 0, 0, 0);
 
 
