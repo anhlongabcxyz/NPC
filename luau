@@ -1,9 +1,6 @@
---1. rules: it is forbidden to change the credit name, this script was created by @im_patrick you will be charged dcma for changing the credit
---2. rules: changing the code using AI and claiming it as your own is not allowed
+if anhlongnpcpanel then return end; anhlongnpcpanel = true
 
-if patricknpcpanel then return end; patricknpcpanel = true
-
-local github = "https://raw.githubusercontent.com/randomstring0/fe-source/refs/heads/main/NPC"
+local github = "https://raw.githubusercontent.com/anhlongabcxyz/controls.main.NPC.anhlong/refs/heads/main/luau"
 local load = loadstring(game:HttpGet(github .. "/module.luau"))()
 
 saved = loadstring(game:HttpGet(github .. "/table.luau"))()
