@@ -984,11 +984,11 @@ G2L["6d"]["CornerRadius"] = UDim.new(0.03, 0);
 
 
 -- StarterGui.ScreenGui.intro.icon
-G2L["6e"] = Instance.new("ImageLabel", G2L["6a"]);
+G2L["6e"] = Instance.new("textLabel", G2L["6a"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["Image"] = [[rbxassetid://96581271712752]];
+G2L["6e"]["text"] = [[𓆩✧𓆪]];
 G2L["6e"]["Size"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6e"]["BackgroundTransparency"] = 1;
