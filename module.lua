@@ -760,7 +760,7 @@ G2L["52"]["BorderSizePixel"] = 0;
 G2L["52"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["52"]["Image"] = [[http://www.roblox.com/asset/?id=6026568240]];
+G2L["52"]["Image"] = [[http://www.roblox.com/asset/?id=14820669184]];
 G2L["52"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["52"]["Name"] = [[button]];
