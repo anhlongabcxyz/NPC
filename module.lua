@@ -984,7 +984,7 @@ G2L["6d"]["CornerRadius"] = UDim.new(0.03, 0);
 
 
 -- StarterGui.ScreenGui.intro.icon
-G2L["6e"] = Instance.new("textLabel", G2L["6a"]);
+G2L["6e"] = Instance.new("TextLabel", G2L["6a"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
