@@ -1008,7 +1008,7 @@ G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6f"]["BackgroundTransparency"] = 1;
 G2L["6f"]["Size"] = UDim2.new(0.61, 0, 0.115, 0);
 G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6f"]["Text"] = [[Im_Patrick npc panel]];
+G2L["6f"]["Text"] = [[@anhlongabcxyz]];
 G2L["6f"]["Name"] = [[title]];
 G2L["6f"]["Position"] = UDim2.new(0.195, 0, 0.59, 0);
 
