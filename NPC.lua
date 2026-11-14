@@ -1,6 +1,6 @@
 if anhlongnpcpanel then return end; anhlongnpcpanel = true
 
-local github = "https://raw.githubusercontent.com/anhlongabcxyz/NPC/refs/heads/main/anhlong.luau"
+local github = "https://raw.githubusercontent.com/anhlongabcxyz/NPC/refs/heads/main/NPC.lua"
 local load = loadstring(game:HttpGet(github .. "/module.luau"))()
 
 saved = loadstring(game:HttpGet(github .. "/table.luau"))()
