@@ -988,7 +988,8 @@ G2L["6e"] = Instance.new("ImageLabel", G2L["6a"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["Image"] = [[rbxassetid://96581271712752]];
+G2L["6e"]["Image"] = [[rbxassetid://125176101961661
+]];
 G2L["6e"]["Size"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6e"]["BackgroundTransparency"] = 1;
@@ -1008,7 +1009,7 @@ G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6f"]["BackgroundTransparency"] = 1;
 G2L["6f"]["Size"] = UDim2.new(0.61, 0, 0.115, 0);
 G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6f"]["Text"] = [[Im_Patrick npc panel]];
+G2L["6f"]["Text"] = [[@anhlongabcxyz]];
 G2L["6f"]["Name"] = [[title]];
 G2L["6f"]["Position"] = UDim2.new(0.195, 0, 0.59, 0);
 
