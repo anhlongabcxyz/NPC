@@ -988,58 +988,39 @@ G2L["62"] = Instance.new("UIScale", G2L["2"]);
 G2L["63"] = Instance.new("UIDragDetector", G2L["2"]);
 
 -- ICON FRAME
-G2L["64"] = Instance.new("Frame", G2L["1"]);
-G2L["64"]["Visible"] = false;
-G2L["64"]["BorderSizePixel"] = 0;
-G2L["64"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
-G2L["64"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["64"]["Size"] = UDim2.new(0.06274, 0, 0.10163, 0);
-G2L["64"]["Position"] = UDim2.new(0.144, 0, 0.24, 0);
-G2L["64"]["Name"] = [[icon]];
-G2L["64"]["BackgroundTransparency"] = 0.4;
-G2L["64"]["Active"] = true;
 
--- ROUND
-G2L["65"] = Instance.new("UICorner", G2L["64"]);
-G2L["65"]["CornerRadius"] = UDim.new(1, 0);
+-- ICON FRAME
+G2L["64"] = Instance.new("Frame", G2L["1"])
+G2L["64"].Name = "icon"
+G2L["64"].Visible = false
+G2L["64"].BorderSizePixel = 0
+G2L["64"].BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+G2L["64"].BackgroundTransparency = 0.4
+G2L["64"].AnchorPoint = Vector2.new(0.5, 0.5)
+G2L["64"].Size = UDim2.new(0.06274, 0, 0.10163, 0)
+G2L["64"].Position = UDim2.new(0.144, 0, 0.24, 0)
+G2L["64"].Active = true
 
--- IMAGE BUTTON (GIỮ NGUYÊN LOẠI ĐỐI TƯỢNG)
-G2L["66"] = Instance.new("ImageButton", G2L["64"]);
-G2L["66"]["Name"] = "ImageButton";
-G2L["66"]["BorderSizePixel"] = 0;
-G2L["66"]["BackgroundTransparency"] = 1;
-G2L["66"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["66"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["66"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["66"]["Image"] = "";
-G2L["66"]["AutoButtonColor"] = false;
+-- CORNER
+G2L["65"] = Instance.new("UICorner", G2L["64"])
+G2L["65"].CornerRadius = UDim.new(1, 0)
 
--- DRAW ✧ WITHOUT FONT
-local sparkleVertical = Instance.new("Frame", G2L["66"])
-sparkleVertical.Name = "SparkleVertical"
-sparkleVertical.AnchorPoint = Vector2.new(0.5, 0.5)
-sparkleVertical.Position = UDim2.new(0.5, 0, 0.5, 0)
-sparkleVertical.Size = UDim2.new(0.13, 0, 0.78, 0)
-sparkleVertical.Rotation = 0
-sparkleVertical.BorderSizePixel = 0
-sparkleVertical.BackgroundColor3 = Color3.new(1, 1, 1)
-
-local sparkleHorizontal = Instance.new("Frame", G2L["66"])
-sparkleHorizontal.Name = "SparkleHorizontal"
-sparkleHorizontal.AnchorPoint = Vector2.new(0.5, 0.5)
-sparkleHorizontal.Position = UDim2.new(0.5, 0, 0.5, 0)
-sparkleHorizontal.Size = UDim2.new(0.78, 0, 0.13, 0)
-sparkleHorizontal.BorderSizePixel = 0
-sparkleHorizontal.BackgroundColor3 = Color3.new(1, 1, 1)
-
+-- IMAGE BUTTON
+G2L["66"] = Instance.new("ImageButton", G2L["64"])
+G2L["66"].Name = "ImageButton"
+G2L["66"].BorderSizePixel = 0
+G2L["66"].BackgroundTransparency = 1
+G2L["66"].AnchorPoint = Vector2.new(0.5, 0.5)
+G2L["66"].Position = UDim2.new(0.5, 0, 0.5, 0)
+G2L["66"].Size = UDim2.new(0.78, 0, 0.78, 0)
+G2L["66"].Image = "rbxassetid://125176101961661"
+G2L["66"].ScaleType = Enum.ScaleType.Fit
+G2L["66"].AutoButtonColor = false
 -- ASPECT RATIO
-G2L["67"] = Instance.new("UIAspectRatioConstraint", G2L["64"]);
-
+G2L["67"] = Instance.new("UIAspectRatioConstraint", G2L["64"])
 -- SCALE
-G2L["68"] = Instance.new("UIScale", G2L["64"]);
-
--- DRAG DETECTOR
-G2L["69"] = Instance.new("UIDragDetector", G2L["64"]);
+G2L["68"] = Instance.new("UIScale", G2L["64"])
+-- Không tạo UIDragDetector ở đây
 G2L["69"]["DragSpace"] = Enum.UIDragDetectorDragSpace.LayerCollector;
 
 -- [ERROR] cannot convert ReferenceUIInstance, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
