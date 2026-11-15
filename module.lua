@@ -909,90 +909,48 @@ G2L["63"] = Instance.new("UIDragDetector", G2L["2"]);
 
 
 
-
 -- StarterGui.ScreenGui.icon
-G2L["64"] = Instance.new("Frame", G2L["1"])
-G2L["64"].Name = "icon"
-G2L["64"].Visible = false
-G2L["64"].BorderSizePixel = 0
-G2L["64"].BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-G2L["64"].BackgroundTransparency = 0.4
-G2L["64"].AnchorPoint = Vector2.new(0.5, 0.5)
-G2L["64"].Size = UDim2.new(0.06274, 0, 0.10163, 0)
-G2L["64"].Position = UDim2.new(0.144, 0, 0.24, 0)
-G2L["64"].Active = true
+G2L["64"] = Instance.new("Frame", G2L["1"]);
+G2L["64"]["Visible"] = false;
+G2L["64"]["BorderSizePixel"] = 0;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["64"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["64"]["Size"] = UDim2.new(0.06274, 0, 0.10163, 0);
+G2L["64"]["Position"] = UDim2.new(0.144, 0, 0.24, 0);
+G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["64"]["Name"] = [[icon]];
+G2L["64"]["BackgroundTransparency"] = 0.4;
+G2L["64"]["Active"] = true;
 
--- Bo tròn
-G2L["65"] = Instance.new("UICorner", G2L["64"])
-G2L["65"].CornerRadius = UDim.new(1, 0)
+-- UICorner
+G2L["65"] = Instance.new("UICorner", G2L["64"]);
+G2L["65"]["CornerRadius"] = UDim.new(1, 0);
 
--- Nút ký tự ✧
-G2L["66"] = Instance.new("TextButton", G2L["64"])
-G2L["66"].Name = "IconButton"
-G2L["66"].AnchorPoint = Vector2.new(0.5, 0.5)
-G2L["66"].Position = UDim2.new(0.5, 0, 0.5, 0)
-G2L["66"].Size = UDim2.new(0.9, 0, 0.9, 0)
-G2L["66"].BackgroundTransparency = 1
-G2L["66"].BorderSizePixel = 0
-G2L["66"].Text = "✧"
-G2L["66"].TextColor3 = Color3.fromRGB(255, 255, 255)
-G2L["66"].TextScaled = true
-G2L["66"].Font = Enum.Font.SourceSans
-G2L["66"].Active = true
-G2L["66"].AutoButtonColor = false
+-- ImageButton giữ nguyên ID để tương thích code cũ
+G2L["66"] = Instance.new("TextButton", G2L["64"]);
+G2L["66"]["Name"] = "ImageButton";
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["BackgroundTransparency"] = 1;
+G2L["66"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["66"]["Size"] = UDim2.new(0.9, 0, 0.9, 0);
+G2L["66"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["66"]["Text"] = "✧";
+G2L["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["TextScaled"] = true;
+G2L["66"]["Font"] = Enum.Font.Gotham;
+G2L["66"]["AutoButtonColor"] = false;
 
--- Giữ tỷ lệ
-G2L["67"] = Instance.new("UIAspectRatioConstraint", G2L["64"])
+-- UIAspectRatioConstraint
+G2L["67"] = Instance.new("UIAspectRatioConstraint", G2L["64"]);
 
--- Điều chỉnh kích thước
-G2L["68"] = Instance.new("UIScale", G2L["64"])
+-- UIScale
+G2L["68"] = Instance.new("UIScale", G2L["64"]);
 
--- Kéo icon bằng chuột và cảm ứng
-local UIS = game:GetService("UserInputService")
-local icon = G2L["64"]
+-- UIDragDetector
+G2L["69"] = Instance.new("UIDragDetector", G2L["64"]);
+G2L["69"]["DragSpace"] = Enum.UIDragDetectorDragSpace.LayerCollector;
 
-local dragging = false
-local dragStart
-local startPos
 
-local function startDrag(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1
-    or input.UserInputType == Enum.UserInputType.Touch then
-
-        dragging = true
-        dragStart = input.Position
-        startPos = icon.Position
-    end
-end
-
-local function updateDrag(input)
-    if not dragging then return end
-
-    if input.UserInputType == Enum.UserInputType.MouseMovement
-    or input.UserInputType == Enum.UserInputType.Touch then
-
-        local delta = input.Position - dragStart
-
-        icon.Position = UDim2.new(
-            startPos.X.Scale,
-            startPos.X.Offset + delta.X,
-            startPos.Y.Scale,
-            startPos.Y.Offset + delta.Y
-        )
-    end
-end
-
-icon.InputBegan:Connect(startDrag)
-G2L["66"].InputBegan:Connect(startDrag)
-
-UIS.InputChanged:Connect(updateDrag)
-
-UIS.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1
-    or input.UserInputType == Enum.UserInputType.Touch then
-        dragging = false
-    end
-end)
 -- [ERROR] cannot convert ReferenceUIInstance, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 
 
