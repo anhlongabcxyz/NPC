@@ -934,7 +934,7 @@ G2L["66"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["66"]["BackgroundTransparency"] = 1;
 G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["66"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["66"]["Image"] = [[rbxassetid://96581271712752]];
+G2L["66"]["Image"] = [[rbxassetid://11104447804]];
 G2L["66"]["Size"] = UDim2.new(0.78, 0, 0.7184, 0);
 G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["66"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
@@ -988,7 +988,7 @@ G2L["6e"] = Instance.new("ImageLabel", G2L["6a"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["Image"] = [[rbxassetid://125176101961661
+G2L["6e"]["Image"] = [[rbxassetid://11104447804
 ]];
 G2L["6e"]["Size"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
