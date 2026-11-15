@@ -930,26 +930,117 @@ G2L["65"]["CornerRadius"] = UDim.new(1, 0);
 G2L["66"] = Instance.new("TextButton", G2L["64"]);
 G2L["66"]["Name"] = "ImageButton";
 G2L["66"]["BorderSizePixel"] = 0;
+
+-- StarterGui.ScreenGui.Frame.network.Frame.togheader
+G2L["5b"] = Instance.new("Frame", G2L["57"]);
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["Size"] = UDim2.new(0.89433, 0, 0.50562, 0);
+G2L["5b"]["Position"] = UDim2.new(0.04407, 0, 0.41573, 0);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["Name"] = [[togheader]];
+
+-- UIGradient
+G2L["5c"] = Instance.new("UIGradient", G2L["5b"]);
+G2L["5c"]["Color"] = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(46, 46, 46)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(21, 21, 21))
+};
+
+-- UICorner
+G2L["5d"] = Instance.new("UICorner", G2L["5b"]);
+G2L["5d"]["CornerRadius"] = UDim.new(0.2, 0);
+
+-- OFF
+G2L["5e"] = Instance.new("Frame", G2L["5b"]);
+G2L["5e"]["Visible"] = false;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["Size"] = UDim2.new(0.44118, 0, 1, 0);
+G2L["5e"]["Name"] = [[off]];
+
+-- TOGGLE BUTTON
+G2L["5f"] = Instance.new("ImageButton", G2L["5b"]);
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["ImageTransparency"] = 1;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["5f"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["5f"]["Size"] = UDim2.new(0.441, 0, 1, 0);
+G2L["5f"]["Position"] = UDim2.new(-0.00735, 0, 0, 0);
+G2L["5f"]["Name"] = [[togglebutton]];
+
+G2L["60"] = Instance.new("UICorner", G2L["5f"]);
+G2L["60"]["CornerRadius"] = UDim.new(0.2, 0);
+
+-- ON
+G2L["61"] = Instance.new("Frame", G2L["5b"]);
+G2L["61"]["Visible"] = false;
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["Size"] = UDim2.new(0.44118, 0, 1, 0);
+G2L["61"]["Position"] = UDim2.new(0.55882, 0, 0, 0);
+G2L["61"]["Name"] = [[on]];
+
+-- MAIN UISCALE
+G2L["62"] = Instance.new("UIScale", G2L["2"]);
+
+-- MAIN DRAG
+G2L["63"] = Instance.new("UIDragDetector", G2L["2"]);
+
+-- ICON FRAME
+G2L["64"] = Instance.new("Frame", G2L["1"]);
+G2L["64"]["Visible"] = false;
+G2L["64"]["BorderSizePixel"] = 0;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["64"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["64"]["Size"] = UDim2.new(0.06274, 0, 0.10163, 0);
+G2L["64"]["Position"] = UDim2.new(0.144, 0, 0.24, 0);
+G2L["64"]["Name"] = [[icon]];
+G2L["64"]["BackgroundTransparency"] = 0.4;
+G2L["64"]["Active"] = true;
+
+-- ROUND
+G2L["65"] = Instance.new("UICorner", G2L["64"]);
+G2L["65"]["CornerRadius"] = UDim.new(1, 0);
+
+-- IMAGE BUTTON (GIỮ NGUYÊN LOẠI ĐỐI TƯỢNG)
+G2L["66"] = Instance.new("ImageButton", G2L["64"]);
+G2L["66"]["Name"] = "ImageButton";
+G2L["66"]["BorderSizePixel"] = 0;
 G2L["66"]["BackgroundTransparency"] = 1;
 G2L["66"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["66"]["Size"] = UDim2.new(0.9, 0, 0.9, 0);
+G2L["66"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["66"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["66"]["Text"] = "✧";
-G2L["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["66"]["TextScaled"] = true;
-G2L["66"]["Font"] = Enum.Font.Gotham;
+G2L["66"]["Image"] = "";
 G2L["66"]["AutoButtonColor"] = false;
 
--- UIAspectRatioConstraint
+-- DRAW ✧ WITHOUT FONT
+local sparkleVertical = Instance.new("Frame", G2L["66"])
+sparkleVertical.Name = "SparkleVertical"
+sparkleVertical.AnchorPoint = Vector2.new(0.5, 0.5)
+sparkleVertical.Position = UDim2.new(0.5, 0, 0.5, 0)
+sparkleVertical.Size = UDim2.new(0.13, 0, 0.78, 0)
+sparkleVertical.Rotation = 0
+sparkleVertical.BorderSizePixel = 0
+sparkleVertical.BackgroundColor3 = Color3.new(1, 1, 1)
+
+local sparkleHorizontal = Instance.new("Frame", G2L["66"])
+sparkleHorizontal.Name = "SparkleHorizontal"
+sparkleHorizontal.AnchorPoint = Vector2.new(0.5, 0.5)
+sparkleHorizontal.Position = UDim2.new(0.5, 0, 0.5, 0)
+sparkleHorizontal.Size = UDim2.new(0.78, 0, 0.13, 0)
+sparkleHorizontal.BorderSizePixel = 0
+sparkleHorizontal.BackgroundColor3 = Color3.new(1, 1, 1)
+
+-- ASPECT RATIO
 G2L["67"] = Instance.new("UIAspectRatioConstraint", G2L["64"]);
 
--- UIScale
+-- SCALE
 G2L["68"] = Instance.new("UIScale", G2L["64"]);
 
--- UIDragDetector
+-- DRAG DETECTOR
 G2L["69"] = Instance.new("UIDragDetector", G2L["64"]);
 G2L["69"]["DragSpace"] = Enum.UIDragDetectorDragSpace.LayerCollector;
-
 
 -- [ERROR] cannot convert ReferenceUIInstance, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 
